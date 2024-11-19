@@ -114,33 +114,7 @@ function showAlert(showMsg, type) {
     alertPlaceholder.append(wrapper);
   };
   appendAlert(showMsg, type);
-  // setTimeout(() => {
-  //     const alertToHide = bootstrap.Alert.getOrCreateInstance('#success-alert')
-
-  //     //todo:
-  //     alertToHide.close()
-  //     }, 2000)
-  // const alertDiv=document.getElementById("alert");
-  //        if(alertDiv.innerHTML==" ")
-  //        {
-  //         alertDiv.innerHTML=`<div class="fade show position-fixed bottom-0 end-0 w-25" id="success-alert" style="z-index: 999999999999999;"></div>`
-  //        }
-
-  /*
-        //// function hideAlertAfterTime(alertId, timeout) {
-            
-        // setTimeout(function() {
-            //     var alertElement = document.getElementById(alertId);
-            //     if (alertElement) {
-                //         alertElement.classList.add('fade');
-                //         setTimeout(function() {
-                    //             alertElement.remove();
-                    //         }, 500); // Allow time for the fade out effect to complete
-                    //     }
-                    // }, timeout);
-                    // }
-                    // hideAlertAfterTime('success-alert', 2000);
-                    */
+  
 }
 
 function getCurrentUser() {

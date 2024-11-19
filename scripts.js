@@ -64,7 +64,7 @@ function getPosts(page) {
                 <div>
                 <img class="border border-black border-2 rounded-circle" src="${
                   post.author.profile_image[0] == undefined
-                    ? "profile-pics/profile.svg"
+                    ? "./profile-pics/profile.svg"
                     : post.author.profile_image
                 }" alt="" style="width:40px;height:40px">
                 <b>${post.author.username}</b>
