@@ -1,4 +1,6 @@
 // const baseUrl="https://tarmeezacademy.com/api/v1";
+// const baseUrl = "https://tarmeezacademy.com/api/v1";
+
 setupUI();
 function setupUI() {
   const token = localStorage.getItem("token");
@@ -33,7 +35,7 @@ function setupUI() {
     registerBtn.style.display = "none";
     const user = getCurrentUser();
     userName.innerHTML = user.username;
-    imageUpload.innerHTML = `<img  class="border border-black border-2 rounded-circle" src="${user.profile_image}" alt="" style="width:40px;height:40px">`;
+    imageUpload.innerHTML = `<img  class="border border-black border-2 rounded-circle" src="${user.profile_image?'profile-pics/profile.svg':user.profile_image}" alt="" style="width:40px;height:40px">`;
     // comment.style.display = "block";  
 }
 }
